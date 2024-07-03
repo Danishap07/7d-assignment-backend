@@ -20,7 +20,7 @@ const storage = multer.diskStorage({
 
 
 
-router.get("/", (req, res) => {
+router.get("/hello", (req, res) => {
     console.log("OPENAI_API_KEY", process.env.OPENAI_API_KEY)
     res.status(200).json({message: "API is working!",});
 
