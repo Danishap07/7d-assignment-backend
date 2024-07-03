@@ -26,3 +26,6 @@ const port = process.env.PORT || 8000;
 
 
 app.listen(port, console.log("server is listening at port:", port));
+
+// "builds": [{ "src": "./src/app.js", "use": "@vercel/node" }],
+    // "routes": [{ "src": "/(.*)", "dest": "/" }],
