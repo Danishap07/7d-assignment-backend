@@ -18,6 +18,9 @@ app.use(bodyParser.json({ limit: '50mb' }));
 
 
 // app.use(express.json());
+app.get('/', (req, res) => {
+    res.send("Hello, API's are running.")
+})
 app.use('/api', routes)
 const port = process.env.PORT || 8000;
 
